@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="star-container">
+        <img src="images/icon-star.svg" alt="" class="icon-star" />
+      </div>
+
+      <h2 class="h2-main">How did we do?</h2>
+
+      <p class="p-main">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+
+      <div class="ratings-container">
+        <input type="radio" id="rating-1" name="radioRating" value="1" />
+        <label for="rating-1">1</label>
+
+        <input type="radio" id="rating-2" name="radioRating" value="2" />
+        <label for="rating-2">2</label>
+
+        <input type="radio" id="rating-3" name="radioRating" value="3" />
+        <label for="rating-3">3</label>
+
+        <input type="radio" id="rating-4" name="radioRating" value="4" />
+        <label for="rating-4">4</label>
+
+        <input type="radio" id="rating-5" name="radioRating" value="5" />
+        <label for="rating-5">5</label>
+      </div>
+
+      <button type="submit" class="btn-submit" id="btn-submit">Submit</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

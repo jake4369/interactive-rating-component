@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: #131518;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.img-thank-you {
+  margin-bottom: 24px;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+span.result {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 12px;
+  color: #fc7614;
+  background: #262e38;
+  border-radius: 22.5px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #969fad;
+}
+
+.p-main {
+  margin-bottom: 24px;
+}
+
+.p-thanks {
+  margin-bottom: 37px;
+}
+
+/* BUTTONS */
+.ratings-container input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.ratings-container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7c8798;
+  background: #262e38;
+  border: unset;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ratings-container label:hover {
+  color: #fff;
+  background: #7c8798;
+}
+
+.ratings-container input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: #fc7614;
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 12px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.86667px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fc7614;
+  border-radius: 22.5px;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+.container {
+  max-width: 327px;
+  height: 360px;
+  margin: 0 auto;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 15px;
+  padding: 24px 24px 32px 24px;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  background: #262e38;
+}
+
+.ratings-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+/* ==========
+ MEDIA QUERIES
+ ========== */
+@media (min-width: 768px) {
+  .img-thank-you {
+    margin-bottom: 32px;
+  }
+  /* ==========
+       TYPOGRAPHY
+       ========== */
+  h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  span.result {
+    font-size: 15px;
+    padding: 4px 19px;
+    margin-bottom: 36px;
+  }
+
+  /* BUTTONS */
+  .ratings-container label {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn-submit {
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    padding: 11px;
+  }
+
+  .btn-submit:hover {
+    color: #fc7614;
+    background: #fff;
+  }
+
+  /* ==========
+       LAYOUT
+       ========== */
+  .container {
+    max-width: 412px;
+    height: 416px;
+    padding: 32px 40px 32px 32px;
+  }
+
+  .ratings-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .star-container {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+  }
+}
